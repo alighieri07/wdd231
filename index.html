@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Alighieri Vergara</title>
+    <meta name="author" content="Alighieri Vergara">
+    <meta name="description" content="Home page for the WDD 231 Web Frontend Development course.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@600;700&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site logo" class="logo">
+        <span class="site-name">Alighieri Vergara</span>
+        <button id="menu-button" aria-label="Open Menu"></button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="card">
+            <h2>Course Work</h2>
+            <div class="card-content">
+                <p>Content coming soon.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Location</h2>
+            <div class="card-content">
+                <p>Content coming soon.</p>
+            </div>
+        </section>
+
+        <section class="card courses">
+            <h2>Courses</h2>
+            <div class="card-content">
+                <div class="filter-buttons">
+                    <button id="all-courses">All</button>
+                    <button id="wdd-courses">WDD</button>
+                    <button id="cse-courses">CSE</button>
+                </div>
+                <div id="course-cards" class="course-cards"></div>
+                <p class="credits-total">Total Credits: <span id="credits"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/alighieri07" target="_blank" aria-label="GitHub">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/alighieri-vergara-carrasco-78b4361a1" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <p>&copy; <span id="current-year"></span> 🌐 Alighieri Vergara, Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

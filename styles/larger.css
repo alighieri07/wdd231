@@ -1,0 +1,26 @@
+@media (min-width: 640px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    #nav-menu {
+        width: auto;
+        margin-left: auto;
+    }
+
+    #nav-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #nav-menu a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+    }
+
+    .course-cards {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+}
