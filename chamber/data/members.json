@@ -1,0 +1,76 @@
+{
+  "members": [
+    {
+      "name": "Viña Santa Rita Tours",
+      "address": "Camino Padre Hurtado 0695, Maipú, Región Metropolitana",
+      "phone": "+56 2 2362 2000",
+      "website": "https://www.santarita.com",
+      "image": "images/santa-rita-tours.webp",
+      "membership": 3,
+      "description": "Guided tours and wine tasting at one of Maipú's historic vineyards."
+    },
+    {
+      "name": "Panadería Doña Elena",
+      "address": "Av. Pajaritos 2140, Maipú, Región Metropolitana",
+      "phone": "+56 2 2531 4487",
+      "website": "https://www.panaderiadonaelena.cl",
+      "image": "images/panaderia-elena.webp",
+      "membership": 1,
+      "description": "Neighborhood bakery serving traditional Chilean bread and pastries for over 20 years."
+    },
+    {
+      "name": "Ferretería El Maipocho",
+      "address": "Av. 5 de Abril 1532, Maipú, Región Metropolitana",
+      "phone": "+56 2 2748 9021",
+      "website": "https://www.ferreteriaelmaipocho.cl",
+      "image": "images/ferreteria-maipocho.webp",
+      "membership": 2,
+      "description": "Family-owned hardware store offering construction materials and home supplies."
+    },
+    {
+      "name": "Restaurant Rincón Maipuino",
+      "address": "Av. Los Pajaritos 3450, Maipú, Región Metropolitana",
+      "phone": "+56 2 2557 3312",
+      "website": "https://www.rinconmaipuino.cl",
+      "image": "images/rincon-maipuino.webp",
+      "membership": 3,
+      "description": "Traditional Chilean cuisine made with local ingredients in a welcoming, family atmosphere."
+    },
+    {
+      "name": "FitMaipú Gimnasio",
+      "address": "Av. Camino a Rinconada 1890, Maipú, Región Metropolitana",
+      "phone": "+56 2 2894 7765",
+      "website": "https://www.fitmaipu.cl",
+      "image": "images/fitmaipu-gym.webp",
+      "membership": 1,
+      "description": "Neighborhood gym offering group classes, strength training, and nutrition coaching."
+    },
+    {
+      "name": "Inmobiliaria Valle Sur",
+      "address": "Av. Américo Vespucio 1245, Maipú, Región Metropolitana",
+      "phone": "+56 2 2611 5540",
+      "website": "https://www.vallesurinmobiliaria.cl",
+      "image": "images/inmobiliaria-vallesur.webp",
+      "membership": 2,
+      "description": "Sales and rentals of residential and commercial properties throughout Maipú."
+    },
+    {
+      "name": "Taller Mecánico Rodríguez",
+      "address": "Av. Portales 4210, Maipú, Región Metropolitana",
+      "phone": "+56 2 2523 8890",
+      "website": "https://www.tallerrodriguez.cl",
+      "image": "images/taller-rodriguez.webp",
+      "membership": 1,
+      "description": "General mechanical service, maintenance, and vehicle inspections for all makes."
+    },
+    {
+      "name": "Peluquería Bella Maipú",
+      "address": "Av. Pedro Fontova 890, Maipú, Región Metropolitana",
+      "phone": "+56 2 2678 2231",
+      "website": "https://www.bellamaipu.cl",
+      "image": "images/peluqueria-bella.webp",
+      "membership": 2,
+      "description": "Hair styling, coloring, and treatment services for the whole family."
+    }
+  ]
+}

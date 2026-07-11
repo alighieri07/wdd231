@@ -1,0 +1,52 @@
+@media only screen and (min-width: 40rem) {
+
+    #menu-button {
+        display: none;
+    }
+
+    #nav-menu {
+        width: auto;
+        margin-left: auto;
+    }
+
+    #nav-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #nav-menu a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+    }
+
+    #member-list {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    #member-list.list .member-card {
+        display: grid;
+        grid-template-columns: 140px 2fr 1fr;
+        align-items: center;
+    }
+
+    #member-list.list .member-card img {
+        width: 100%;
+        height: 90px;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+
+    .logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    .site-name {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}
