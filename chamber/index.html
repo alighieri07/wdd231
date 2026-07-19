@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Maipú Chamber of Commerce</title>
+    <meta name="author" content="Alighieri Vergara">
+    <meta name="description" content="Home page of the Maipú Chamber of Commerce: local business events, weather, and member spotlights.">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Home | Maipú Chamber of Commerce">
+    <meta property="og:description" content="Home page of the Maipú Chamber of Commerce: local business events, weather, and member spotlights.">
+    <meta property="og:image" content="https://alighieri07.github.io/wdd231/chamber/images/chamber-preview.webp">
+    <meta property="og:url" content="https://alighieri07.github.io/wdd231/chamber/index.html">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Maipú Chamber of Commerce logo" class="logo">
+        <span class="site-name">Maipú Chamber of Commerce</span>
+        <button id="menu-button" aria-label="Open Menu"></button>
+
+        <nav id="nav-menu">
+            <ul>
+               <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Maipú Chamber of Commerce</h1>
+        <section class="hero">
+            <img src="images/hero-maipu.jpg" alt="View of Maipú, Chile" class="hero-image" width="1600" height="600">
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </section>
+        <section class="events">
+            <h2>Current Events</h2>
+            <p>Join us for the Maipú Small Business Fair on the last Saturday of this month at Plaza de Maipú.</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div id="current-weather"></div>
+            <div id="forecast"></div>
+        </section>
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Maipú Chamber of Commerce | Av. Pajaritos 1900, Maipú, Región Metropolitana, Chile</p>
+        <p>Phone: +56 2 2555 1234 | Email: contacto@camaramaipu.cl</p>
+        <p>&copy; <span id="current-year"></span> Alighieri Vergara | WDD 231</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

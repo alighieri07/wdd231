@@ -23,17 +23,37 @@
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
 
-    #member-list.list .member-card {
+#member-list.list .member-card {
         display: grid;
-        grid-template-columns: 140px 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
         align-items: center;
     }
 
-    #member-list.list .member-card img {
-        width: 100%;
-        height: 90px;
     }
-}
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "events weather"
+            "spotlights spotlights";
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+    .hero { grid-area: hero; margin-bottom: 0; }
+    .events { grid-area: events; }
+    .weather { grid-area: weather; }
+    .spotlights { grid-area: spotlights; }
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 
 @media only screen and (min-width: 64rem) {
 
