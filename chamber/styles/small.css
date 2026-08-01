@@ -6,6 +6,13 @@
     --background-color: #faf7f2;
     --text-color: #2b2320;
     --white: #ffffff;
+    --surface-color: #fffdf9;
+    --border-color: #d8c7b3;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --shadow-color-strong: rgba(0, 0, 0, 0.06);
+    --focus-ring: rgba(201, 162, 39, 0.16);
+    --card-radius: 8px;
+    --card-radius-large: 12px;
 }
 
 * {
@@ -138,12 +145,20 @@ header {
     gap: 0.75rem;
 }
 
-.member-card {
+.member-card,
+.membership-form,
+.events,
+.weather,
+.spotlights,
+.discover-card {
     background-color: var(--white);
-    border: 1px solid var(--secondary-color);
-    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-color);
+}
+
+.member-card {
     overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
 }
@@ -221,11 +236,10 @@ h1 {
 }
 
 .membership-form {
-    background-color: var(--white);
-    border: 1px solid rgba(109, 43, 63, 0.15);
-    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius-large);
     padding: 1.25rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-color-strong);
 }
 
 .form-grid {
@@ -255,11 +269,11 @@ h1 {
 .membership-form textarea {
     width: 100%;
     padding: 0.8rem 0.9rem;
-    border: 1px solid #d8c7b3;
-    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
     font: inherit;
     color: var(--text-color);
-    background-color: #fffdf9;
+    background-color: var(--surface-color);
 }
 
 .membership-form input:focus,
@@ -267,7 +281,7 @@ h1 {
 .membership-form textarea:focus {
     outline: none;
     border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.16);
+    box-shadow: 0 0 0 3px var(--focus-ring);
 }
 
 .membership-form textarea {
@@ -346,12 +360,8 @@ footer a {
 .events,
 .weather,
 .spotlights {
-    background-color: var(--white);
-    border: 1px solid var(--secondary-color);
-    border-radius: 8px;
     padding: 1.25rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .events h2,
@@ -479,11 +489,7 @@ footer a {
 .card-8 { grid-area: a8; }
 
 .discover-card {
-    background-color: var(--white);
-    border: 1px solid var(--secondary-color);
-    border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
 }
