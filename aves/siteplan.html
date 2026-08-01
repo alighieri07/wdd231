@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Aves de Chile</title>
+    <meta name="author" content="Alighieri Vergara">
+    <meta name="description" content="Individual project site plan for Aves de Chile, an informational guide to the native and endemic birds of Chile.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700;900&display=swap">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header>
+        <h1>Aves de Chile</h1>
+        <p class="tagline">Individual Project Site Plan &mdash; WDD 231</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>1. Site Name</h2>
+            <p><strong>Aves de Chile</strong></p>
+            <p>This name was chosen because it directly and clearly identifies the subject of the
+                site in the language most associated with the content: Chilean birds. It is short,
+                memorable, and easy to pronounce for both Spanish and English speaking visitors.</p>
+            <p class="domain">Optional domain availability: <code>avesdechile.cl</code></p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>2. Site Purpose</h2>
+            <p>The site is an informational guide showcasing native and endemic Chilean bird
+                species. It provides a home page introducing the topic, a catalog page displaying
+                a collection of birds pulled from a data source with details such as common name,
+                scientific name, habitat, size, conservation status, and region, and a page with a
+                form where visitors can report bird sightings. Visitors can also save favorite
+                birds using local storage and view detailed information about each species in a
+                modal dialog.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>3. Scenarios</h2>
+            <ul>
+                <li>What endemic bird species can I expect to see if I go hiking in central Chile?</li>
+                <li>How do I report a bird sighting I observed during a recent trip?</li>
+                <li>Which of these species are currently considered threatened or endangered?</li>
+            </ul>
+        </section>
+
+        <section id="color-scheme">
+            <h2>4. Color Scheme</h2>
+            <div class="color-list">
+                <div class="color-item">
+                    <span class="swatch swatch-forest"></span>
+                    <div>
+                        <p class="color-name">Forest Green &mdash; <code>#2f4d3a</code></p>
+                        <p>Used for the header background, headings, and navigation.</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <span class="swatch swatch-sky"></span>
+                    <div>
+                        <p class="color-name">Sky Blue &mdash; <code>#6fa8c9</code></p>
+                        <p>Used for links, buttons, and small accent details.</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <span class="swatch swatch-sand"></span>
+                    <div>
+                        <p class="color-name">Warm Sand &mdash; <code>#f5f1e6</code></p>
+                        <p>Used as the main page background color.</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <span class="swatch swatch-charcoal"></span>
+                    <div>
+                        <p class="color-name">Charcoal &mdash; <code>#2b2b2b</code></p>
+                        <p>Used for body text to ensure readability against light backgrounds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>5. Typography</h2>
+            <p><strong>Merriweather</strong> (serif) will be used for all headings (h1&ndash;h3),
+                giving the site an editorial, field-guide feel. You can see it applied to every
+                heading on this page.</p>
+            <p><strong>Lato</strong> (sans-serif) will be used for all body text, paragraphs, and
+                list items, for clean readability on both mobile and desktop screens. This
+                paragraph itself is set in Lato.</p>
+        </section>
+
+        <section id="wireframe">
+            <h2>6. Wireframe</h2>
+            <p>Home page layout for mobile and larger screens:</p>
+
+            <div class="wireframes">
+                <div class="wireframe-block">
+                    <h3>Mobile (320px&ndash;640px)</h3>
+                    <div class="frame frame-mobile">
+                        <div class="wf-header">Header / Logo / Menu button</div>
+                        <div class="wf-hero">Hero image + intro text</div>
+                        <div class="wf-card">Featured bird card</div>
+                        <div class="wf-card">Featured bird card</div>
+                        <div class="wf-footer">Footer</div>
+                    </div>
+                </div>
+
+                <div class="wireframe-block">
+                    <h3>Desktop (1025px and above)</h3>
+                    <div class="frame frame-desktop">
+                        <div class="wf-header">Header / Logo / Full Nav</div>
+                        <div class="wf-hero">Hero image + intro text</div>
+                        <div class="wf-grid">
+                            <div class="wf-card">Bird card</div>
+                            <div class="wf-card">Bird card</div>
+                            <div class="wf-card">Bird card</div>
+                        </div>
+                        <div class="wf-footer">Footer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alighieri Vergara | WDD 231 Individual Project Site Plan</p>
+    </footer>
+</body>
+</html>
