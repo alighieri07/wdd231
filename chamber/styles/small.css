@@ -220,6 +220,83 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.membership-form {
+    background-color: var(--white);
+    border: 1px solid rgba(109, 43, 63, 0.15);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.form-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.membership-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #d8c7b3;
+    border-radius: 8px;
+    font: inherit;
+    color: var(--text-color);
+    background-color: #fffdf9;
+}
+
+.membership-form input:focus,
+.membership-form select:focus,
+.membership-form textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.16);
+}
+
+.membership-form textarea {
+    min-height: 7rem;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.membership-form input[type="submit"] {
+    width: auto;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 0.85rem 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.membership-form input[type="submit"]:hover {
+    background-color: var(--dark-color);
+}
+
 footer {
     background-color: var(--dark-color);
     color: var(--white);

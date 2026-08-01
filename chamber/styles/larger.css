@@ -69,3 +69,36 @@
         font-size: 2.2rem;
     }
 }
+
+@media only screen and (min-width: 40rem) {
+
+    .join-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "heading heading"
+            "form cards";
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .join-main h1 {
+        grid-area: heading;
+    }
+
+    .join-form-section {
+        grid-area: form;
+    }
+
+    .join-cards-section {
+        grid-area: cards;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .form-group.full-width {
+        grid-column: 1 / -1;
+    }
+}

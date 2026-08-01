@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Maipú Chamber of Commerce</title>
+    <meta name="author" content="Alighieri Vergara">
+    <meta name="description" content="Apply to join the Maipú Chamber of Commerce and choose the membership level that fits your business.">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Join | Maipú Chamber of Commerce">
+    <meta property="og:description" content="Apply to join the Maipú Chamber of Commerce and choose the membership level that fits your business.">
+    <meta property="og:image" content="https://alighieri07.github.io/wdd231/chamber/images/chamber-preview.webp">
+    <meta property="og:url" content="https://alighieri07.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@600;700&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Maipú Chamber of Commerce logo" class="logo">
+        <span class="site-name">Maipú Chamber of Commerce</span>
+        <button id="menu-button" aria-label="Open Menu"></button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Join the Chamber</h1>
+
+        <section class="join-form-section">
+            <h2>Membership Application</h2>
+            <form class="membership-form" action="thankyou.html" method="get">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fname">First Name
+                            <input type="text" id="fname" name="fname" title="Your first name"
+                                autocomplete="given-name" required>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name
+                            <input type="text" id="lname" name="lname" title="Your last name"
+                                autocomplete="family-name" required>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orgtitle">Organizational Title
+                            <input type="text" id="orgtitle" name="orgtitle"
+                                title="Your title within your organization (letters, spaces, and hyphens only, minimum 7 characters)"
+                                autocomplete="organization-title"
+                                pattern="[A-Za-zÀ-ÿ\s\-]{7,}">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address
+                            <input type="email" id="email" name="email" title="Your email address"
+                                autocomplete="email" placeholder="email@example.com" required>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Mobile Phone Number
+                            <input type="tel" id="phone" name="phone" title="Your mobile phone number"
+                                autocomplete="tel" required>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orgname">Business/Organization Name
+                            <input type="text" id="orgname" name="orgname" title="Your business or organization's name"
+                                autocomplete="organization" required>
+                        </label>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="membership">Membership Level
+                            <select id="membership" name="membership" title="Select a membership level" required>
+                                <option value="">Select a level</option>
+                                <option value="np">NP Membership (no fee)</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="description">Business/Organization Description
+                            <textarea id="description" name="description" title="Briefly describe your business or organization"></textarea>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="submit" value="Submit Application">
+                </div>
+            </form>
+        </section>
+
+        <section class="join-cards-section">
+            <h2>Membership Levels</h2>
+            <div class="membership-cards">
+                <div class="membership-card card-np">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations. No fee.</p>
+                    <button class="modal-trigger" data-modal="modal-np">Learn More</button>
+                </div>
+                <div class="membership-card card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Our entry-level paid membership.</p>
+                    <button class="modal-trigger" data-modal="modal-bronze">Learn More</button>
+                </div>
+                <div class="membership-card card-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced visibility and benefits.</p>
+                    <button class="modal-trigger" data-modal="modal-silver">Learn More</button>
+                </div>
+                <div class="membership-card card-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Our top tier of benefits and exposure.</p>
+                    <button class="modal-trigger" data-modal="modal-gold">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="modal-np" class="membership-modal">
+        <h2>NP Membership</h2>
+        <p>Designed for registered non-profit organizations serving the Maipú community. There is no membership fee.</p>
+        <ul>
+            <li>Listing in the online business directory</li>
+            <li>Access to Chamber networking events</li>
+            <li>Invitations to community volunteer fairs</li>
+        </ul>
+        <button class="modal-close">Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-modal">
+        <h2>Bronze Membership</h2>
+        <p>A great starting point for small local businesses looking to grow their presence in Maipú.</p>
+        <ul>
+            <li>Everything in NP Membership</li>
+            <li>Discounted tickets to Chamber events</li>
+            <li>Basic directory listing with contact info</li>
+        </ul>
+        <button class="modal-close">Close</button>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+        <h2>Silver Membership</h2>
+        <p>For growing businesses that want more exposure and training opportunities.</p>
+        <ul>
+            <li>Everything in Bronze Membership</li>
+            <li>Quarterly business training workshops</li>
+            <li>Featured placement in the directory listing</li>
+        </ul>
+        <button class="modal-close">Close</button>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+        <h2>Gold Membership</h2>
+        <p>Our top membership tier, built for businesses that want maximum visibility and support.</p>
+        <ul>
+            <li>Everything in Silver Membership</li>
+            <li>Home page spotlight rotation</li>
+            <li>Free admission for staff to all Chamber events</li>
+        </ul>
+        <button class="modal-close">Close</button>
+    </dialog>
+
+    <footer>
+        <p>Maipú Chamber of Commerce | Av. Pajaritos 1900, Maipú, Región Metropolitana, Chile</p>
+        <p>Phone: +56 2 2555 1234 | Email: contacto@camaramaipu.cl</p>
+        <p>&copy; <span id="current-year"></span> Alighieri Vergara | WDD 231</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
